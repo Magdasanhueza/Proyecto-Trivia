@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+      <style>   
+       body {background-color: powderblue;
+       }
+      </style>
+      <style>
+        fieldset {border: 5px solid pink;
+
+        }
+      </style>
+      <style>
+      .button {
+         background-color: #4CAF50;
+          border-radius: 12px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 6px 4px;
+          cursor: pointer;
+  
+}
+</style>
+      <title>Trivia de animales</title>
+      <script></script> 
+
+   </head>
+
+   <body>
+      <div>
+         <div id="pantalla1" style="display:block">
+            <h1 style="color:lightSalmon;">Bienvenido a Trivia de animales !!!!</h1>
+            <p>Por favor ingresa tu nombre para jugar</p>
+            <form>
+               <input type="text" id="nombreUsuario"</input>
+               <button class="button" type="button" onclick="formulario1()">
+               ¡A jugar!
+               </button> 
+            </form>
+         </div>
+         <div id="pantalla2" style="display: none">
+            <h1>¿De qué te gustaría aprender?</h1>
+            <button class="button" onclick="formulario2(event)">Animales Salvajes</button>
+                     <h3>O</h3>
+            <button class="button" onclick="formulario2(event)">Animales Domésticos</button>
+         </div>
+         <div id="pantalla3" style="display: none">
+            <form id="formulario3">
+              <div>
+               <p>¿Cuántos receptores olfativos tiene un perro?</p>
+               <fieldset>
+                <input type="radio" required name="p1" id="r1" value="1"><label for="r1"> 50.000</label>
+                <input type="radio" required name="p1" id="r2" value="2"><label for="r2"> 300.000</label>
+                <input type="radio" required name="p1" id="r3" value="3"><label for="r3"> 3.000.000</label>
+                <input type="radio" required name="p1" id="r4" value="4"><label for="r4"> 10.000.000</label>
+               <!--<input type="radio" value="1"> 50.000 </input>
+               <input type="radio" value="2"> 300.000</input>
+               <input type="radio" value="3"> 3.000.000</input>
+               <input type="radio" value="4"> 10.000.000</input> -->
+               </fieldset>
+              </div> 
+              <div>
+               <p>¿Cuántos músculos tienen las orejas de un gato?</p>
+               <fieldset>
+               <!--<input type="radio"> 9 meses</input>
+               <input type="radio"> 32 meses</input>
+               <input type="radio"> 4 meses</input>
+               <input type="radio"> 56 meses</input> -->
+               <input type="radio" required name="p2" id="r1" value="1" ><label for="r1"> 32</label>
+                <input type="radio" required name="p2" id="r2" value="2" ><label for="r2"> 4</label>
+                <input type="radio" required name="p2" id="r3" value="3"><label for="r3"> 9</label>
+                <input type="radio" required name="p2" id="r4" value="4"><label for="r4"> 56</label>
+               
+               </fieldset>
+              </div>
+            
+            
+              <div>
+               <p>¿Cuál de estas aseveraciones es falsa sobre los cerdos?</p>
+               <fieldset>
+               <!-- <input type="radio"> Tienes su propio Lenguaje</input>
+               <input type="radio"> un verdo adulto puede beber mas de 500 litros de agua al día</input>
+               <input type="radio"> No pueden mirar hacia arriba</input>
+               <input type="radio"> Los cerdos sudan</input> -->
+               <input type="radio" required name="p3" id="r5" value="1"><label for="r5">     Tienen su propio Lenguaje</label>
+                <input type="radio" required name="p3" id="r6" value="2"><label for="r6"> un cerdo adulto puede beber mas de 500 litros de agua al día</label>
+                <input type="radio" required name="p3" id="r7" value="3"><label for="r7"> No pueden mirar hacia arriba</label>
+                <input type="radio" required name="p3" id="r8" value="4"><label for="r8"> Los cerdos sudan</label>
+               </fieldset>
+              </div>
+              <!--<input type="submit" onclick="pantalla3()"></input>-->
+               <button class="button" type="button"  onclick="pantalla3()">enviar</button>
+            </form>
+           <!-- <button type="button" onclick="resultado1(event)">enviar</button>-->
+         </div>
+         <div id="pantalla4" style="display: none">
+            <form id="formulario4">
+              <div>
+               <p>¿A cuánta velocidad corre un puma?</p>
+               <fieldset>
+               <!--<input type="radio"> 100 km/h</input>
+               <input type="radio"> 58 km/h</input>
+               <input type="radio"> 42 km/h</input>
+               <input type="radio"> 10 km/h</input> -->
+                <input type="radio" required name="a" id="r9" value="1" ><label for="r9"> 100 km/h</label>
+                <input type="radio" required name="a" id="r10" value="2"><label for="r10"> 58 km/h</label>
+                <input type="radio" required name="a" id="r11" value="3"><label for="r11"> 42 km/h</label>
+                <input type="radio" required name="a" id="r12" value="4"><label for="r12"> 10 km/h</label>
+               
+               </fieldset>
+              </div>
+              <div>
+               <p>¿cuánto dura la gestación de un elefante?</p>
+               <fieldset>
+               <!--<input type="radio"> 4 meses</input>
+               <input type="radio"> 9 meses</input>
+               <input type="radio"> 22 meses</input>
+               <input type="radio"> 30 meses</input> -->
+                <input type="radio" required name="b" id="r1" value="1"><label for="r1">4 meses</label>
+                <input type="radio" required name="b" id="r2" value="2"><label for="r2"> 9 meses</label>
+                <input type="radio" required name="b" id="r1" value="3"><label for="r1">22 meses</label>
+                <input type="radio" required name="b" id="r2" value="4"><label for="r2">30 meses</label>
+               </fieldset>
+              </div>
+              <div>
+               <p>¿cuánto duerme una jirafa?</p>
+               <fieldset>
+               <!--<input type="radio"> entre 10 a 15 hrs x dia</input>
+               <input type="radio"> entre 10 min y 2 horas</input>
+               <input type="radio"> entre 5 y 8 hrs</input>
+               <input type="radio"> 22 horas diarias</input> -->
+               <input type="radio" required name="c" id="r1" value="1"><label for="r1">entre 10 a 15 hrs x dia</label>
+              <input type="radio" required name="c" id="r2" value="2"><label for="r2">entre 10 min y 2 horas</label>
+              <input type="radio" required name="c" id="r1" value="3"><label for="r1">entre 5 y 8 hrs</label>
+              <input type="radio" required name="c" id="r2" value="4"><label for="r2">22 horas diarias</label>
+               </fieldset>
+              </div>
+              <button class="button" type="button" onclick="pantalla4()">enviar</button>
+            </form>
+            
+            </div>
+            <div id="pantalla5" style="display:none">
+              <h1>¡¡¡FELICITACIONES HAS COMPLETADO LA TRIVIA!!!</h1>
+              <p> Tu puntaje es <span id="puntajeTotal"></span> de 3 puntos</p>
+              <!--<input type="button"onclick="reiniciar(valor)">reiniciar</input>-->
+              <button size="2" class="button" type="button" onclick="reiniciar2()"> reiniciar</button> 
+            
+             </div>
+             <div id="pantalla6" style="display:none">
+              <h1>¡¡¡FELICITACIONES HAS COMPLETADO LA TRIVIA!!!</h1>
+              <p> Tu puntaje es <span id="puntajetotal"></span>  aciertos de 3 puntos</p>
+              <button class="button"  type="button" onclick="reiniciar()">reiniciar</button>
+              </div>
+      </div>
+      <script src="script.js"></script>
+    
+   </body>
+</html>
+
+
+
+
+
+
+
+
