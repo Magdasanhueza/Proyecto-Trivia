@@ -22,4 +22,4 @@ _Como dupla 3.3 (DANI Y MAGDA) les queremos agradecer por la oportunidad de pode
 
 
 ---
-⌨️ con ❤️ por [Daniela Méndez y Magdalena Sanhueza] 😊
+⌨️ con ❤️ por [Daniela Méndez y Magdalena Sanhueza] 😊 puedes pasar a visitar nuetro proyecto y jugar! https://magdasanhueza.github.io/Proyecto-Trivia/
